@@ -1,4 +1,4 @@
-# CVTailor AI - Phase 1: Backend Foundation (Free-Tier First)
+# CVTailor AI - Phase 1: Backend Foundation 
 
 Welcome to **Phase 1** of CVTailor AI.  
 This phase builds a **production-style backend foundation** for authentication, document ingestion, secure storage, and async processing — while staying **cost-conscious for personal use**.
@@ -30,7 +30,7 @@ This phase builds a **production-style backend foundation** for authentication, 
 - **Redis:** Upstash free tier
 - **S3-compatible storage:** Cloudflare R2 (or MinIO for local dev)
 
-> You can swap providers later without changing core architecture.
+> We can swap providers later without changing core architecture.
 
 ---
 
