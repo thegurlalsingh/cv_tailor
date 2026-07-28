@@ -41,7 +41,7 @@ function App() {
   const handleViewResults = ({ downloadUrl, atsScore }) => {
     setResults({ downloadUrl, atsScore });
     setScreen('results');
-  };
+  }
 
   return (
     <>
@@ -58,15 +58,21 @@ function App() {
       )}
 
       {screen === 'workspace' && (
-        <WorkspaceScreen session={session} onViewResults={handleViewResults} token={token} onLogout={handleLogout} />
+        <WorkspaceScreen session={session} onViewResults={handleViewResults} onLogout={handleLogout} token={token} />
       )}
 
       {screen === 'results' && (
-        <ResultsScreen downloadUrl={results.downloadUrl} atsScore={results.atsScore} onGoBack={() => setScreen('landing')} onLogout={handleLogout} />
+        <ResultsScreen
+          downloadUrl={results.downloadUrl}
+          atsScore={results.atsScore}
+          onGoBack={() => setScreen('landing')}
+          onLogout={handleLogout}
+        />
       )}
     </>
   )
 }
 
-export default App
+export default App;
+
 
