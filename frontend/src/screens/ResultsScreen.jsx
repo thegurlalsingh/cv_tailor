@@ -72,7 +72,9 @@ export default function ResultScreen({ downloadUrl, atsScore, onGoBack, onLogout
                     <div className='w-full bg-surface border border-border rounded-card p-8 mb-8'>
                         <div className='flex justify-between items-end mb-4'>
                             <span className='font-mono text-xs text-text-secondary tracking-widest'>FINAL ATS MATCH SCORE</span>
-                            <span className={`text-5xl font-bold font-mono ${getScoreColor(atsScore || 0)}`}>{atsScore || '-'} %</span>
+                            <span className={`text-5xl font-bold font-mono ${getScoreColor(atsScore || 0)}`}>
+                                {atsScore !== null && atsScore !== undefined ? atsScore : '-'} %
+                            </span>
                         </div>
                         <div className='w-full bg-[#222] h-3 rounded-full overflow-hidden'>
                             <div className={`h-full rounded-full transition-all duration-1000 ease-out ${getBarColor(atsScore || 0)}`} style={{ width: `${atsScore || 0}%` }}></div>
