@@ -5,7 +5,7 @@ from app.api.endpoints import resumes_router, jd_router, tailor_router, auth_rou
 
 app = FastAPI(title = settings.project_name)
 origins = [
-    "http://localhost:5173",
+    "https://cv-tailor-psi.vercel.app/",
 ]
 app.add_middleware(
     CORSMiddleware,
