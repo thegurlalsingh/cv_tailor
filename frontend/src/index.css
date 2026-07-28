@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #000000;
+  --color-surface: #111111;
+  --color-surface-elevated: #161616;
+  --color-primary: #4F8CFF;
+  --color-border: #222222;
+  --color-text-primary: #e2e2e2;
+  --color-text-secondary: #8c909f;
+
+  --font-sans: "Geist", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-label: "Label", "monospace";
+
+  --radius-std: 8px;
+  --radius-card: 14px;
+}
+
+body {
+  @apply bg-background text-text-primary font-sans antialiased;
+}
