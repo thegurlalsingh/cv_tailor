@@ -58,7 +58,7 @@ function App() {
       )}
 
       {screen === 'workspace' && (
-        <WorkspaceScreen session={session} onViewResults={() => setScreen('results')} token={token} nLogout={handleLogout} />
+        <WorkspaceScreen session={session} onViewResults={handleViewResults} token={token} onLogout={handleLogout} />
       )}
 
       {screen === 'results' && (
