@@ -4,7 +4,7 @@ from openai import AsyncOpenAI
 from app.core.config import settings
 import json
 
-model_name = "inclusionai/ling-3.0-flash:free"
+model_name = "dots-studio/dots-3-note-preview:free"
 
 client = AsyncOpenAI(
     base_url = "https://openrouter.ai/api/v1",
